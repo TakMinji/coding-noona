@@ -1,0 +1,18 @@
+.box{
+    border: 50px solid red; width: 200px;
+    padding: 50px; margin-bottom: 20px;
+}
+
+.yellow{
+    border-color: #f1c40f;
+    /*
+    display:none;
+    visibility:hidden;
+
+    display:none은 아예 숨겨버리는 것 
+    visibility:hidden은 공간을 남겨두고 숨기는 것  */
+}
+
+.green{
+    border-color: #2ecc71;
+}
