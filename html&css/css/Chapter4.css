@@ -1,7 +1,6 @@
 body{
     display: contents; font-family: arial, sans-serif;
 }
-
 .navbar{
     float: right; margin: 20px;
 }
@@ -45,35 +44,35 @@ body{
     border: 1px solid #dadce0;
     color: #202124;
 }
-.language {
+.language{
     text-decoration: none;
     padding: 0 3px;
     color: #1a0dab;
   }
-  .language:hover {
+  .language:hover{
     text-decoration: underline;
   } 
-  .footer {
+  .footer{
     position: absolute;
     bottom: 0px;
     background: #f2f2f2;
     width: 100%;
   }
-  .first-line {
+  .first-line{
     padding: 15px 30px;
     border-bottom: 1px solid #dadce0;
     font-size: 15px;
     color: rgba(0, 0, 0, 0.54);
   }
-  .second-line {
+  .second-line{
     padding: 15px 30px;
     font-size: 15px;
     color: rgba(0, 0, 0, 0.54);
   }
-  .second-line-second {
+  .second-line-second{
     float: right;
   }
-  .second-line a {
+  .second-line a{
     text-decoration: none;
     color: rgba(0, 0, 0, 0.54);
     padding-right: 15px;
