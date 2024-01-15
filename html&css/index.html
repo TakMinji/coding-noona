@@ -3,35 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spotify</title>
-    <link rel="stylesheet" href="css/Chapter5_Spotify.css">
+    <title>Cartier</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/Cartier.css">
 </head>
 <body>
-    <nav>
-        <div>
-            <img src="https://noona-spotify.netlify.app/image/logo.png" width="132">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="data:image/png;base64,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" alt="" width="50%" class="d-inline-block align-text-top">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">VALENTINE'S DAY</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                     JEWELRY
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      CLOCK
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      BAGS AND ACCESSORIES
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      PERFUME
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                    WHAT'S NEW
+                    </a>
+                </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
         </div>
-        <div>
-            <a href="#" class="nav-item">Premium</a>
-            <a href="#" class="nav-item">Support</a>
-            <a href="#" class="nav-item">Download</a>
-            <span class="nav-item">|</span>
-            <a href="#">Sign up</a>
-            <a href="#">Log in</a>
+      </nav>
+      <!-- nav Fin -->
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-    </nav>
-    <main>
-        <div class="main-container">
-            <div class="headline">
-                <div class="headline-first"> Listening is</div>
-                <div>everything</div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://www.cartier.com/on/demandware.static/-/Sites-CartierKR-Library/default/dw14ecdc40/clp/2024/VDAY/01%20Image%200_HERO_MODULE_PERRSO_LANDING_WAVE1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.cartier.com/on/demandware.static/-/Sites-CartierKR-Library/default/dwc5237c63/plp-banners/new-fragrances/fragrance/HEADER_1920x800.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.cartier.com/on/demandware.static/-/Sites-CartierKR-Library/default/dwf87c573b/homepage/2024/January/W2/BANNER_2560x996.jpg" class="d-block w-100" alt="...">
+            </div>
         </div>
-        <div class="sub-headline">
-            " Millions of songs and prodacasts. No credit needed. "
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+      <!-- carousel slide Fin -->
+
+    <div class="text-center mt-5">
+        <h2 class="mb-4 fs-2">WITH SINCERITY, PASSION, AND DEPTH<h2>
+        <p class="fs-5">Give the gift of bold love with the Cartier Red Box<p>
+        <button type="button" class="btn btn-link">Learn more</button>
+    </div>
+    <div class="container mt-5 mb-5">
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="https://static.pxlecdn.com/photos/639598565/original/198c4b1acff90fdc2746.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text text-center fs-5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="https://static.pxlecdn.com/photos/631913483/original/377592a774ca1b8152e1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text text-center fs-5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="https://static.pxlecdn.com/photos/636814802/original/b0b0782e203edcb8d15a.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text text-center fs-5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="https://static.pxlecdn.com/photos/631012791/original/ea11cc3ad51b5bdc3b15.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text text-center fs-5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+            </div>
         </div>
-        <div class="button-area">
-            <div class="button-style">Get Spotify free</div>
-        </div>
-    </main>
+    </div>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

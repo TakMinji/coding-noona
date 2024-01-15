@@ -1,0 +1,16 @@
+*{
+    font-family:'Times New Roman', Times, serif
+}
+
+.btn-outline-success{
+    color: #650511;
+    border-color: #650511;
+}
+.btn-outline-success:hover{
+    color: white;
+    background-color: #650511;
+    border-color: #650511;
+}
+div ul li{
+    margin: 0 15px; 
+}
